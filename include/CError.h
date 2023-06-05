@@ -1,0 +1,12 @@
+#pragma once
+
+#define	TR_E_SUCESS						0
+#define TR_E_ROBOT_NOT_PLACED			1
+#define TR_E_CHANGE_DIRECTION_FAILED	2
+#define TR_E_INVALID_LOCATION			3
+#define TR_E_INVALID_FACE				4
+#define TR_E_INT_CONVERSION_FAILED		5
+#define TR_E_INVALID_COMMAND			6
+#define TR_E_COMMAND_LIST_EMPTY			7
+#define TR_E_GENERAL_ERROR				8
+
