@@ -7,7 +7,6 @@ CPlace::CPlace(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTable> table, 
 
 }
 
-
 int CPlace::execute()
 {
 	return m_robot->PlaceInTable(m_posX, m_posY, m_face, m_table);

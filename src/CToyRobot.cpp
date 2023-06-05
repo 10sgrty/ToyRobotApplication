@@ -108,7 +108,6 @@ int CToyRobot::ChangeDirection(Direction direction)
 	if (direction == Direction::LEFT)
 	{
 		return FaceLeft();
-
 	}
 	
 	if (direction == Direction::RIGHT)

@@ -1,6 +1,4 @@
 #pragma once
-#ifndef __CTOYROBOT_H__
-
 #include "CTable.h"
 #include <memory>
 #include <string>
@@ -53,5 +51,4 @@ public:
 	Face FaceStringToFace(std::string faceString);
 };
 
-#endif /* __CTOYROBOT_H__ */
 

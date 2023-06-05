@@ -74,7 +74,6 @@ TEST_F(CTestFixture, TurnAroundA)
         "LEFT",
     };
 
-
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
 
@@ -97,7 +96,6 @@ TEST_F(CTestFixture, TurnAroundB)
         "RIGHT",
         "RIGHT",
     };
-
 
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
@@ -123,7 +121,6 @@ TEST_F(CTestFixture, TurnAroundC)
         "LEFT",
         "LEFT",
     };
-
 
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
@@ -164,7 +161,6 @@ TEST_F(CTestFixture, GoAroundA)
 
     };
 
-
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
 
@@ -203,7 +199,6 @@ TEST_F(CTestFixture, GoAroundB)
         "MOVE",
 
     };
-
 
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
@@ -256,7 +251,6 @@ TEST_F(CTestFixture, RobotFallTestB)
         "MOVE",
     };
 
-
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
 
@@ -286,7 +280,6 @@ TEST_F(CTestFixture, RobotFallTestC)
         "RIGHT",
         "MOVE",
     };
-
 
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
@@ -319,7 +312,6 @@ TEST_F(CTestFixture, InvalidCommandStringRecover)
         "MOVE AWAY", // Invalid
         "LEFT",
     };
-
 
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
@@ -354,7 +346,6 @@ TEST_F(CTestFixture, ExecuteFailRecover)
         "MOVE", // Fail
         "RIGHT",
     };
-
 
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();
@@ -393,7 +384,6 @@ TEST_F(CTestFixture, FirstCommandFail)
         "MOVE", // Fail
         "RIGHT",
     };
-
 
     m_controller->ProcessCommandList(commandStringList);
     m_controller->ExecuteCommandList();

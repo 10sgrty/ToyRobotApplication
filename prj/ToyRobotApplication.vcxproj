@@ -38,7 +38,6 @@
     <ClInclude Include="..\include\CReport.h" />
     <ClInclude Include="..\include\CTable.h" />
     <ClInclude Include="..\include\CToyRobot.h" />
-    <ClInclude Include="..\include\resource.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

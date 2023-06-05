@@ -1,6 +1,4 @@
 #pragma once
-
-#ifndef __CTABLE_H__
 #include "CToyRobot.h"
 #include <memory>
 
@@ -20,5 +18,3 @@ private:
 	int m_width;
 	int m_height;
 };
-
-#endif /* __CTABLE_H__ */

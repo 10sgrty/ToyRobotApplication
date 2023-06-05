@@ -7,7 +7,6 @@ CTestFixture::CTestFixture() :
 
 }
 
-
 void CTestFixture::SetUp()
 {
     std::shared_ptr<CToyRobot> robot = std::make_shared<CToyRobot>();

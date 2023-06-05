@@ -7,7 +7,6 @@ CMoveForward::CMoveForward(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTa
 
 }
 
-
 int CMoveForward::execute()
 {
 	return m_robot->MoveForward();
