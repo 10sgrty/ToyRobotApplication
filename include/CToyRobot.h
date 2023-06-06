@@ -39,16 +39,16 @@ public:
 	CToyRobot();
 
 	bool IsPlaced();
-	int ChangeDirection(Direction direction);
+	int ChangeDirection(const Direction& direction);
 	int MoveForward();
-	int PlaceInTable(int posX, int posY, Face face, std::shared_ptr<CTable> table);
+	int PlaceInTable(const int& posX, const int& posY, const Face& face, const std::shared_ptr<CTable>& table);
 	
 	//int Report();
 	void GetPosition(int& posX, int& posY);
 	void GetFace(Face& face);
 
-	std::string FaceToFaceString(Face face);
-	Face FaceStringToFace(std::string faceString);
+	std::string FaceToFaceString(const Face& face);
+	Face FaceStringToFace(const std::string& faceString);
 };
 
 

@@ -8,7 +8,7 @@ class CPlace :
     public CCommand
 {
 public:
-    CPlace(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTable> table, int posX, int posY, Face face);
+    CPlace(const std::shared_ptr<CToyRobot>& robot, const std::shared_ptr<CTable>& table, const int& posX, const int& posY, const Face& face);
     virtual int execute();
 
 private:

@@ -11,9 +11,9 @@ private:
 	std::vector<std::shared_ptr<CCommand>> m_commandList;
 
 public:
-	CController(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTable> table);
-	int ProcessCommand(std::string commandString);
-	int ProcessCommandList(std::vector<std::string> commandStringList);
+	CController(const std::shared_ptr<CToyRobot>& robot, const std::shared_ptr<CTable>& table);
+	int ProcessCommand(const std::string& commandString);
+	int ProcessCommandList(const std::vector<std::string>& commandStringList);
 	int ExecuteCommand();
 	int ExecuteCommandList();
 

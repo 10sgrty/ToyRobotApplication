@@ -2,13 +2,13 @@
 #include "CError.h"
 #include <iostream>
 
-CReport::CReport(std::shared_ptr<CToyRobot> robot) :
+CReport::CReport(const std::shared_ptr<CToyRobot>& robot) :
 	m_robot(robot)
 {
 
 }
 
-void CReport::Report(int posX, int posY, Face face)
+void CReport::Report(const int& posX, const int& posY, const Face& face)
 {	
 	std::cout << "Output: " << posX << "," << posY << "," << m_robot->FaceToFaceString(face) << "\n";
 }

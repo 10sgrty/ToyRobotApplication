@@ -20,7 +20,7 @@ bool CToyRobot::IsPlaced()
 	return m_isPlaced; 
 };
 
-std::string CToyRobot::FaceToFaceString(Face face)
+std::string CToyRobot::FaceToFaceString(const Face& face)
 {
 	std::string faceString = "INVALID";
 
@@ -37,7 +37,7 @@ std::string CToyRobot::FaceToFaceString(Face face)
 	return faceString;
 }
 
-Face CToyRobot::FaceStringToFace(std::string faceString)
+Face CToyRobot::FaceStringToFace(const std::string& faceString)
 {
 	Face face = Face::INVALID;
 
@@ -98,7 +98,7 @@ int CToyRobot::FaceRight()
 	return TR_E_SUCESS;
 }
 
-int CToyRobot::ChangeDirection(Direction direction)
+int CToyRobot::ChangeDirection(const Direction& direction)
 {
 	if (!IsPlaced())
 	{
@@ -157,7 +157,7 @@ int CToyRobot::MoveForward()
 	return TR_E_SUCESS;
 }
 
-int CToyRobot::PlaceInTable(int posX, int posY, Face face, std::shared_ptr<CTable> table)
+int CToyRobot::PlaceInTable(const int& posX, const int& posY, const Face& face, const std::shared_ptr<CTable>& table)
 {
 	if (!table->IsLocationValid(posX, posY))
 	{

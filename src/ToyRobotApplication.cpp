@@ -27,7 +27,7 @@ void DisplayHelp()
     std::cout << "  Robot turns right, the direction it is facing will change. Robot need to be placed on the table first.\n";
 
     std::cout << "REPORT\n";
-    std::cout << "  Display the robot's current position on the table and the diretion it is facing. Robot need to be placed on the table first.\n";
+    std::cout << "  Display the robot's current position on the table and the direction it is facing. Robot need to be placed on the table first.\n";
     std::cout << "*To quit, use the command \":q\". \n\n";
     std::cout << "Please enter a command:\n";
 }

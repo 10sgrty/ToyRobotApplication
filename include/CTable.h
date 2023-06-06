@@ -10,9 +10,9 @@ class CToyRobot;
 class CTable
 {
 public:
-	CTable(int width, int height);
+	CTable(const int& width, const int& height);
 
-	bool IsLocationValid(int x, int y);
+	bool IsLocationValid(const int& x, const int& y);
 
 private:
 	int m_width;

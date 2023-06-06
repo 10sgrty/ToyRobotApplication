@@ -8,7 +8,7 @@ class CMoveForward :
     public CCommand
 {
 public:
-    CMoveForward(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTable> table);
+    CMoveForward(const std::shared_ptr<CToyRobot>& robot, const std::shared_ptr<CTable>& table);
     virtual int execute();
 
 private:

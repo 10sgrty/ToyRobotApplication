@@ -7,12 +7,12 @@ class CReport :
     public CCommand
 {
 public:
-    CReport(std::shared_ptr<CToyRobot> robot);
+    CReport(const std::shared_ptr<CToyRobot>& robot);
     virtual int execute();
 
 private:
     std::shared_ptr<CToyRobot> m_robot;
 
-    void Report(int posX, int posY, Face face);
+    void Report(const int& posX, const int& posY, const Face& face);
 };
 

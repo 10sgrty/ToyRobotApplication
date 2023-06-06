@@ -6,7 +6,7 @@
 #include "CError.h"
 #include <iostream>
 
-CController::CController(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTable> table) :
+CController::CController(const std::shared_ptr<CToyRobot>& robot, const std::shared_ptr<CTable>& table) :
     m_robot(robot), m_table(table), m_numParseFail(0), m_numExecuteFail(0)
 {
 
@@ -70,7 +70,7 @@ int ParseCommandStringParameters(const std::string& commandString, int& posX, in
     return TR_E_SUCESS;
 }
 
-int CController::ProcessCommand(std::string commandString)
+int CController::ProcessCommand(const std::string& commandString)
 {
     size_t offset = commandString.find_first_of(' ');
 
@@ -123,7 +123,7 @@ int CController::ProcessCommand(std::string commandString)
     return TR_E_SUCESS;
 }
 
-int CController::ProcessCommandList(std::vector<std::string> commandStringList)
+int CController::ProcessCommandList(const std::vector<std::string>& commandStringList)
 {
     for (size_t i = 0; i < commandStringList.size(); i++)
     {

@@ -1,7 +1,7 @@
 #include "CMoveForward.h"
 #include <iostream>
 
-CMoveForward::CMoveForward(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTable> table) :
+CMoveForward::CMoveForward(const std::shared_ptr<CToyRobot>& robot, const std::shared_ptr<CTable>& table) :
 	m_robot(robot), m_table(table)
 {
 

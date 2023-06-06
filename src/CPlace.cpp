@@ -1,7 +1,7 @@
 #include "CPlace.h"
 #include <iostream>
 
-CPlace::CPlace(std::shared_ptr<CToyRobot> robot, std::shared_ptr<CTable> table, int posX, int posY, Face face) :
+CPlace::CPlace(const std::shared_ptr<CToyRobot>& robot, const std::shared_ptr<CTable>& table, const int& posX, const int& posY, const Face& face) :
 	m_robot(robot), m_table(table), m_posX(posX), m_posY(posY), m_face(face)
 {
 

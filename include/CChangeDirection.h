@@ -8,7 +8,7 @@ class CChangeDirection :
     public CCommand
 {
 public:
-    CChangeDirection(std::shared_ptr<CToyRobot> robot, Direction direction);
+    CChangeDirection(const std::shared_ptr<CToyRobot>& robot, const Direction& direction);
     virtual int execute();
 
 private:
